@@ -1,0 +1,62 @@
+@import '../../styles/base/_fn.scss';
+$mainColor:#20bc22;
+$baseColor:#ffffff;
+$name:list;
+
+.#{$name}{
+     padding: _(20);
+    .list-title{
+        position: relative;
+        height: _(40);
+        line-height: _(40);
+        color: $mainColor;
+        padding-left: _(20);
+        margin: _(10) 0;
+        &:before{
+            position: absolute;
+            content: '';
+            width:_(10);
+            height: 100%;
+            display: block;
+            top: 0;
+            left: 0;
+            background: $mainColor; 
+        }
+    }
+    .list-item-box{
+        overflow: hidden;
+        .list-item{
+            width: 100%;
+            margin-bottom: _(20);
+            display: flex;
+            border-bottom: _(3) solid #c8c8c8;
+            padding: _(10) 0;
+            .image-box{
+                width: _(165);
+                height: _(220);
+               .image{
+                   height: 100%;
+                   width: 100%;
+                   display: block;
+                   @include bgImg("");
+               }
+            }
+            .info-box{
+                flex: 1;
+                padding: _(10) _(15);
+                color: #555555;
+                .title{
+                    @include ellipsis();
+                    font-size: _(30);
+                    color: $mainColor;
+                }
+                .info-detail-box{
+
+                    .info-detail-title{
+                        color: #9b9b9b;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/base/_fn.scss';
+
+.top-bar-box{
+    width: 100%;
+    // height: _(80);
+    background-color: rgba(246, 246, 246, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: _(10) _(20);
+    .left-box{
+        height: _(60);
+        .logo{
+            width: _(60);
+            height: _(60);
+            height: inherit;
+            @include bgImg('./images/logo.png');
+        }
+    }
+    .right-box{
+        display: flex;
+        align-items: center;
+        .icon-box{
+            width: _(80);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .icon{
+            width: _(40);
+            height: _(40);
+            &.search-icon{
+                @include bgImg('./images/search.png');
+            }
+            &.login-icon{
+                @include bgImg('./images/login.png');
+            }
+        }
+        .top-word{
+            font-size: _(20);
+        }
+    }
+}

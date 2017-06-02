@@ -1,0 +1,17 @@
+@import '../../styles/base/_fn.scss';
+
+$name:detail-header-bar;
+
+.#{$name}{
+    height: _(90);
+    background: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 _(30);
+    .header-title{
+        font-size: _(34);
+    }
+}
+

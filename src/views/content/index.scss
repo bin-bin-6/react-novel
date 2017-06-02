@@ -1,0 +1,35 @@
+@import '../../styles/base/_fn.scss';
+
+$name:content-container;
+
+.#{$name}{
+    padding: _(20);
+    .content-title{
+        border-bottom: _(1) solid $borderColor_default;
+        padding: _(10) 0 ;
+        color: $mainColor;
+    }
+    .main-content{
+
+        .main-content-title{
+            font-size: _(40);
+            color: #232323;
+            margin: _(15) 0;
+        }
+    }
+    .page-btn-grounp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .page-btn{
+            padding:_(20);
+            flex: 1;
+            text-align: center;
+            color: $mainColor;
+            border-right: _(1) solid $mainColor;
+            &:last-child{
+                border-right: none;
+            }
+        }
+    }
+}

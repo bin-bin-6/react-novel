@@ -1,0 +1,16 @@
+@import '../../styles/base/_fn.scss';
+
+$name:detail-content-bar;
+
+.#{$name}{
+    padding: _(20);
+    border-bottom: _(1) solid $borderColor_default;
+    .title{
+        font-size: _(34);
+        margin-bottom: _(6);
+    }
+    .content{
+        color: #777;
+    }
+}
+

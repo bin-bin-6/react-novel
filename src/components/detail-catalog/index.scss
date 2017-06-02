@@ -1,0 +1,21 @@
+@import '../../styles/base/_fn.scss';
+
+$name:detail-catalog-bar;
+
+.#{$name}{
+    padding: _(20);
+    .title{
+        font-size: _(34);
+        margin-bottom: _(6);
+    }
+    .catalog-list{
+        .catalog-ul{
+            &>li{
+                padding: _(16) 0;
+                margin: 0 _(10);
+                font-size: _(30);
+            }
+        }
+    }
+}
+

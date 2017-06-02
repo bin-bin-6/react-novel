@@ -1,0 +1,22 @@
+@import '../../styles/base/_fn.scss';
+$activeColor:#53E1F9;
+$baseColor:#ffffff;
+.btnBox{
+    display: flex;
+    margin: 1rem 0;
+    .btn{
+        text-align: center;
+        border-radius: 8px;
+        width: _(300);
+        margin:0 auto;
+        padding: _(10);
+    }
+    .unClickAble{
+        background:#eee;
+        color:$activeColor;
+    }
+    .clickAble{
+        background: $activeColor;
+        color:$baseColor,
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../styles/base/_fn.scss';
+
+.authorBox{
+    width: 100%;
+    .authorUl{
+        margin: 0 auto;
+        color: #fff;
+        .authorLi{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: _(20) auto;
+            font-size: _(30);
+        }
+    }
+}

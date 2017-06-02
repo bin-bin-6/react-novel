@@ -1,0 +1,52 @@
+@import '../../styles/base/_fn.scss';
+
+$name:detail-index-bar;
+
+.#{$name}{
+    padding: _(20);
+    border-bottom: _(1) solid $borderColor_default;
+    .detail-index{
+        width: 100%;
+        margin-bottom: _(20);
+        display: flex;
+        padding: _(10) 0;
+        .image-box{
+            width: _(165);
+            height: _(220);
+            .image{
+                height: 100%;
+                width: 100%;
+                display: block;
+                @include bgImg("");
+            }
+        }
+        .info-box{
+            flex: 1;
+            padding: _(10) _(15);
+            color: #555555;
+            .title{
+                @include ellipsis();
+                font-size: _(30);
+                color: $mainColor;
+            }
+            .info-detail-box{
+                &>li{
+                    margin: _(5) 0;
+                }
+                .info-detail-title{
+                    color: #9b9b9b;
+                }
+            }
+        }
+    }
+    .begin-read-btn{
+        background: $mainColor;
+        color: #ffffff;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        border-radius: _(6);
+        padding: _(8);
+    }
+}
+

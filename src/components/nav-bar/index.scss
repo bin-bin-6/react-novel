@@ -1,0 +1,47 @@
+@import '../../styles/base/_fn.scss';
+
+$name:nav-bar-box;
+$mainColor:#20bc22;
+
+.#{$name}{
+    width: 100%;
+    border-bottom: 3px solid #e6e6e6;
+    margin-bottom: _(10);
+    background: rgba(245,245,245,0.96);
+    .swiper-container {
+        width: 100%;
+        height: inherit;
+        display: flex;
+    }
+    .swiper-slide {
+        padding: _(15) 0;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #333;
+    }
+    .nav-active{
+        position: relative;
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: _(5);
+            background-color: $mainColor;
+        }
+    
+    }
+}
